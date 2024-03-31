@@ -59,7 +59,7 @@ WHERE name LIKE '%man'
 ```mysql
 SELECT COUNT(*) AS count
 FROM trip
-WHERE plane = 'TU-134';
+WHERE plane = 'TU-134'
 ```
 
 </details>
@@ -73,7 +73,7 @@ WHERE plane = 'TU-134';
 SELECT DISTINCT cp.name
 FROM company cp
          JOIN trip tr ON cp.id = tr.company
-WHERE plane = 'Boeing';
+WHERE plane = 'Boeing'
 ```
 
 </details>
@@ -87,7 +87,7 @@ WHERE plane = 'Boeing';
 ```mysql
 SELECT DISTINCT plane
 FROM trip
-WHERE town_to = 'Moscow';
+WHERE town_to = 'Moscow'
 ```
 
 </details>
@@ -102,7 +102,7 @@ WHERE town_to = 'Moscow';
 SELECT town_to,
        TIMEDIFF(time_in, time_out) AS flight_time
 FROM trip
-WHERE town_from = 'Paris';
+WHERE town_from = 'Paris'
 ```
 
 </details>
@@ -117,7 +117,7 @@ WHERE town_from = 'Paris';
 SELECT name
 FROM trip tr
          JOIN company cp ON tr.company = cp.id
-WHERE town_from = 'Vladivostok';
+WHERE town_from = 'Vladivostok'
 ```
 
 </details>
@@ -132,7 +132,7 @@ SELECT *
 FROM trip
 WHERE DATE(time_out) = '1900-01-01'
   AND TIME_FORMAT(time_out, '%H:%i') >= '10:00'
-  AND TIME_FORMAT(time_out, '%H:%i') <= '14:00';
+  AND TIME_FORMAT(time_out, '%H:%i') <= '14:00'
 ```
 
 </details>
@@ -148,7 +148,7 @@ SELECT name
 FROM passenger
 WHERE LENGTH(name) = (
     SELECT MAX(LENGTH(name))
-    FROM passenger);
+    FROM passenger)
 ```
 ```mysql
 select name
@@ -165,10 +165,9 @@ LIMIT 2
 
 ```mysql
 SELECT trip,
-       COUNT(*) AS count
-FROM passenger ps
-         JOIN Pass_in_trip pt ON ps.id = pt.passenger
-GROUP BY trip;
+	COUNT(passenger) as count
+FROM Pass_in_trip
+group by trip
 ```
 
 </details>
