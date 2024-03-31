@@ -1374,7 +1374,19 @@ WHERE c.customer_key in (
                 GROUP BY customer_key	
                 HAVING COUNT(customer_key) = 2)
 ```
-
+```mysql
+SELECT name
+FROM Customer 
+WHERE customer_key in (              
+        SELECT customer_key
+        FROM ( SELECT DISTINCT customer_key,product_key
+                    FROM Product 
+                    JOIN Purchase USING (product_key) 
+                	WHERE YEAR(date) = 2024 AND MONTH(date) = 3
+                    AND (name = 'Laptop' or name = 'Monitor')) t
+        GROUP BY customer_key
+        HAVING COUNT(product_key) > 1)
+```
 </details>
 
 Задание 97. Посчитать количество работающих складов на текущую дату по каждому городу. Вывести только те города, у которых количество складов более 80.
