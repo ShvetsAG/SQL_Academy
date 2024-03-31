@@ -1334,7 +1334,7 @@ WHERE EXISTS (SELECT 1
               JOIN Purchase p on b.product_key = p.product_key
               WHERE b.name='Smartwatch' AND YEAR(date) = 2024  AND p.customer_key = c.customer_key) 
 ```
-<details>
+	
   <summary>Решение_2</summary>
 
 ```mysql
