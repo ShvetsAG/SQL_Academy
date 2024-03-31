@@ -1321,6 +1321,22 @@ WHERE email_verified_at IS NOT NULL
 
 </details>
 
+Задание 93. Какой средний возраст клиентов, купивших Smartwatch (использовать наименование товара product.name) в 2024 году? [(сайт)](https://sql-academy.org/ru/trainer/tasks/93)
+
+<details>
+  <summary>Решение</summary>
+
+```mysql
+SELECT AVG(c.age) as average_age
+FROM customer c
+WHERE EXISTS (SELECT 1
+              FROM Product b
+              JOIN Purchase p on b.product_key = p.product_key
+              WHERE b.name='Smartwatch' AND YEAR(date) = 2024  AND p.customer_key = c.customer_key) 
+```
+
+</details>
+
 Задание 97. Посчитать количество работающих складов на текущую дату по каждому городу. Вывести только те города, у которых количество складов более 80.
 Данные на выходе - город, количество складов. [(сайт)](https://sql-academy.org/ru/trainer/tasks/97)
 
