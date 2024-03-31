@@ -1324,7 +1324,7 @@ WHERE email_verified_at IS NOT NULL
 Задание 93. Какой средний возраст клиентов, купивших Smartwatch (использовать наименование товара product.name) в 2024 году? [(сайт)](https://sql-academy.org/ru/trainer/tasks/93)
 
 <details>
-  <summary>Решение_1</summary>
+  <summary>Решение</summary>
 
 ```mysql
 SELECT AVG(c.age) as average_age
@@ -1334,8 +1334,6 @@ WHERE EXISTS (SELECT 1
               JOIN Purchase p on b.product_key = p.product_key
               WHERE b.name='Smartwatch' AND YEAR(date) = 2024  AND p.customer_key = c.customer_key) 
 ```
-	
-  <summary>Решение_2</summary>
 
 ```mysql
 SELECT AVG(c.age) as average_age
