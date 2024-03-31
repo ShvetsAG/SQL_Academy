@@ -1,10 +1,6 @@
 # Решение заданий из тренажера [SQL Academy](https://sql-academy.org/ru)
 
-[English version](english.md) 
-
-[Сертификат](certificates/yunus_ganiyev_ru.pdf)
-
-1. Вывести имена всех людей, которые есть в базе данных
+Задание 1. Вывести имена всех людей, которые есть в базе данных
    авиакомпаний [(сайт)](https://sql-academy.org/ru/trainer/tasks/1)
 
 <details>
@@ -17,7 +13,7 @@ FROM passenger;
 
 </details>
 
-2. Вывести названия всеx авиакомпаний [(сайт)](https://sql-academy.org/ru/trainer/tasks/2)
+Задание 2. Вывести названия всеx авиакомпаний [(сайт)](https://sql-academy.org/ru/trainer/tasks/2)
 
 <details>
   <summary>Решение</summary>
@@ -29,7 +25,7 @@ FROM Company;
 
 </details>
 
-3. Вывести все рейсы, совершенные из Москвы [(сайт)](https://sql-academy.org/ru/trainer/tasks/3)
+Задание 3. Вывести все рейсы, совершенные из Москвы [(сайт)](https://sql-academy.org/ru/trainer/tasks/3)
 
 <details>
   <summary>Решение</summary>
@@ -42,7 +38,7 @@ WHERE town_from = 'Moscow';
 
 </details>
 
-4. Вывести имена людей, которые заканчиваются на "man" [(сайт)](https://sql-academy.org/ru/trainer/tasks/4)
+Задание 4. Вывести имена людей, которые заканчиваются на "man" [(сайт)](https://sql-academy.org/ru/trainer/tasks/4)
 
 <details>
   <summary>Решение</summary>
@@ -55,7 +51,7 @@ WHERE name LIKE '%man';
 
 </details>
 
-5. Вывести количество рейсов, совершенных на TU-134 [(сайт)](https://sql-academy.org/ru/trainer/tasks/5)
+Задание 5. Вывести количество рейсов, совершенных на TU-134 [(сайт)](https://sql-academy.org/ru/trainer/tasks/5)
 
 <details>
   <summary>Решение</summary>
@@ -68,7 +64,7 @@ WHERE plane = 'TU-134';
 
 </details>
 
-6. Какие компании совершали перелеты на Boeing [(сайт)](https://sql-academy.org/ru/trainer/tasks/6)
+Задание 6. Какие компании совершали перелеты на Boeing [(сайт)](https://sql-academy.org/ru/trainer/tasks/6)
 
 <details>
   <summary>Решение</summary>
@@ -82,7 +78,7 @@ WHERE plane = 'Boeing';
 
 </details>
 
-7. Вывести все названия самолётов, на которых можно улететь в Москву (Moscow)
+Задание 7. Вывести все названия самолётов, на которых можно улететь в Москву (Moscow)
    [(сайт)](https://sql-academy.org/ru/trainer/tasks/7)
 
 <details>
@@ -96,7 +92,7 @@ WHERE town_to = 'Moscow';
 
 </details>
 
-8. В какие города можно улететь из Парижа (Paris) и сколько времени это займёт?
+Задание 8. В какие города можно улететь из Парижа (Paris) и сколько времени это займёт?
    [(сайт)](https://sql-academy.org/ru/trainer/tasks/8)
 
 <details>
@@ -111,7 +107,7 @@ WHERE town_from = 'Paris';
 
 </details>
 
-9. Какие компании организуют перелеты из Владивостока (Vladivostok)?
+Задание 9. Какие компании организуют перелеты из Владивостока (Vladivostok)?
    [(сайт)](https://sql-academy.org/ru/trainer/tasks/9)
 
 <details>
@@ -126,7 +122,7 @@ WHERE town_from = 'Vladivostok';
 
 </details>
 
-10. Вывести вылеты, совершенные с 10 ч. по 14 ч. 1 января 1900 г. [(сайт)](https://sql-academy.org/ru/trainer/tasks/10)
+Задание 10. Вывести вылеты, совершенные с 10 ч. по 14 ч. 1 января 1900 г. [(сайт)](https://sql-academy.org/ru/trainer/tasks/10)
 
 <details>
   <summary>Решение</summary>
@@ -141,7 +137,7 @@ WHERE DATE(time_out) = '1900-01-01'
 
 </details>
 
-11. Выведите пассажиров с самым длинным ФИО. Пробелы, дефисы и точки считаются частью имени.
+Задание 11. Выведите пассажиров с самым длинным ФИО. Пробелы, дефисы и точки считаются частью имени.
     [(сайт)](https://sql-academy.org/ru/trainer/tasks/11)
 
 <details>
@@ -157,7 +153,7 @@ WHERE LENGTH(name) = (
 
 </details>
 
-12. Вывести id и количество пассажиров для всех прошедших полётов [(сайт)](https://sql-academy.org/ru/trainer/tasks/12)
+Задание 12. Вывести id и количество пассажиров для всех прошедших полётов [(сайт)](https://sql-academy.org/ru/trainer/tasks/12)
 
 <details>
   <summary>Решение</summary>
@@ -172,7 +168,7 @@ GROUP BY trip;
 
 </details>
 
-13. Вывести имена людей, у которых есть полный тёзка среди пассажиров
+Задание 13. Вывести имена людей, у которых есть полный тёзка среди пассажиров
     [(сайт)](https://sql-academy.org/ru/trainer/tasks/13)
 
 <details>
@@ -187,7 +183,7 @@ HAVING COUNT(*) > 1;
 
 </details>
 
-14. В какие города летал Bruce Willis [(сайт)](https://sql-academy.org/ru/trainer/tasks/14)
+Задание 14. В какие города летал Bruce Willis [(сайт)](https://sql-academy.org/ru/trainer/tasks/14)
 
 <details>
   <summary>Решение</summary>
@@ -202,7 +198,7 @@ WHERE name = 'Bruce Willis';
 
 </details>
 
-15. Выведите дату и время прилёта пассажира Стив Мартин (Steve Martin) в Лондон (London) 
+Задание 15. Выведите дату и время прилёта пассажира Стив Мартин (Steve Martin) в Лондон (London) 
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/15)
 
 <details>
@@ -219,7 +215,7 @@ WHERE name = 'Steve Martin'
 
 </details>
 
-16. Вывести отсортированный по количеству перелетов (по убыванию) и имени (по возрастанию) список пассажиров, 
+Задание 16. Вывести отсортированный по количеству перелетов (по убыванию) и имени (по возрастанию) список пассажиров, 
 совершивших хотя бы 1 полет. [(сайт)](https://sql-academy.org/ru/trainer/tasks/16)
 
 <details>
@@ -238,7 +234,7 @@ ORDER BY count DESC,
 
 </details>
 
-17. Определить, сколько потратил в 2005 году каждый из членов семьи. В результирующей выборке не выводите тех членов 
+Задание 17. Определить, сколько потратил в 2005 году каждый из членов семьи. В результирующей выборке не выводите тех членов 
 семьи, которые ничего не потратили. [(сайт)](https://sql-academy.org/ru/trainer/tasks/17)   
 
 <details>
@@ -257,7 +253,7 @@ GROUP BY member_name,
 
 </details>
 
-18. Узнать, кто старше всех в семьe [(сайт)](https://sql-academy.org/ru/trainer/tasks/18) 
+Задание 18. Узнать, кто старше всех в семьe [(сайт)](https://sql-academy.org/ru/trainer/tasks/18) 
 
 <details>
   <summary>Решение</summary>
@@ -271,7 +267,7 @@ LIMIT 1;
 
 </details>
 
-19. Определить, кто из членов семьи покупал картошку (potato) [(сайт)](https://sql-academy.org/ru/trainer/tasks/19)
+Задание 19. Определить, кто из членов семьи покупал картошку (potato) [(сайт)](https://sql-academy.org/ru/trainer/tasks/19)
 
 <details>
   <summary>Решение</summary>
@@ -287,7 +283,7 @@ GROUP BY status;
 
 </details>
 
-20. Сколько и кто из семьи потратил на развлечения (entertainment). Вывести статус в семье, имя, сумму 
+Задание 20. Сколько и кто из семьи потратил на развлечения (entertainment). Вывести статус в семье, имя, сумму 
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/20)
 
 <details>
@@ -306,7 +302,7 @@ WHERE good_type_name = 'entertainment';
 
 </details>
 
-21. Определить товары, которые покупали более 1 раза [(сайт)](https://sql-academy.org/ru/trainer/tasks/21)
+Задание 21. Определить товары, которые покупали более 1 раза [(сайт)](https://sql-academy.org/ru/trainer/tasks/21)
 
 <details>
   <summary>Решение</summary>
@@ -321,7 +317,7 @@ HAVING COUNT(*) > 1;
 
 </details>
 
-22. Найти имена всех матерей (mother) [(сайт)](https://sql-academy.org/ru/trainer/tasks/22)
+Задание 22. Найти имена всех матерей (mother) [(сайт)](https://sql-academy.org/ru/trainer/tasks/22)
 
 <details>
   <summary>Решение</summary>
@@ -334,7 +330,7 @@ WHERE status = 'mother';
 
 </details>
 
-23. Найдите самый дорогой деликатес (delicacies) и выведите его цену  
+Задание 23. Найдите самый дорогой деликатес (delicacies) и выведите его цену  
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/23)
 
 <details>
@@ -353,7 +349,7 @@ LIMIT 1;
 
 </details>
 
-24. Определить кто и сколько потратил в июне 2005 [(сайт)](https://sql-academy.org/ru/trainer/tasks/24)
+Задание 24. Определить кто и сколько потратил в июне 2005 [(сайт)](https://sql-academy.org/ru/trainer/tasks/24)
 
 <details>
   <summary>Решение</summary>
@@ -369,7 +365,7 @@ WHERE YEAR(date) = 2005
 
 </details>
 
-25. Определить, какие товары не покупались в 2005 году [(сайт)](https://sql-academy.org/ru/trainer/tasks/25)
+Задание 25. Определить, какие товары не покупались в 2005 году [(сайт)](https://sql-academy.org/ru/trainer/tasks/25)
 
 <details>
   <summary>Решение</summary>
@@ -386,7 +382,7 @@ WHERE good_id NOT IN (
 
 </details>
 
-26. Определить группы товаров, которые не приобретались в 2005 году 
+Задание 26. Определить группы товаров, которые не приобретались в 2005 году 
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/26)
 
 <details>
@@ -406,7 +402,7 @@ WHERE good_type_id NOT IN (
 
 </details>
 
-27. Узнать, сколько потрачено на каждую из групп товаров в 2005 году. Вывести название группы и сумму 
+Задание 27. Узнать, сколько потрачено на каждую из групп товаров в 2005 году. Вывести название группы и сумму 
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/27)
 
 <details>
@@ -424,7 +420,7 @@ GROUP BY good_type_name;
 
 </details>
 
-28. Сколько рейсов совершили авиакомпании из Ростова (Rostov) в Москву (Moscow) ? 
+Задание 28. Сколько рейсов совершили авиакомпании из Ростова (Rostov) в Москву (Moscow) ? 
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/28)  
 
 <details>
@@ -439,7 +435,7 @@ WHERE town_from = 'Rostov'
 
 </details>
 
-29. Выведите имена пассажиров улетевших в Москву (Moscow) на самолете TU-134 
+Задание 29. Выведите имена пассажиров улетевших в Москву (Moscow) на самолете TU-134 
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/29)  
 
 <details>
@@ -457,7 +453,7 @@ GROUP BY name;
 
 </details>
 
-30. Выведите нагруженность (число пассажиров) каждого рейса (trip). Результат вывести в отсортированном виде по убыванию
+Задание 30. Выведите нагруженность (число пассажиров) каждого рейса (trip). Результат вывести в отсортированном виде по убыванию
 нагруженности. [(сайт)](https://sql-academy.org/ru/trainer/tasks/30)  
 
 <details>
@@ -473,7 +469,7 @@ ORDER BY count DESC;
 
 </details>
 
-31. Вывести всех членов семьи с фамилией Quincey. [(сайт)](https://sql-academy.org/ru/trainer/tasks/31) 
+Задание 31. Вывести всех членов семьи с фамилией Quincey. [(сайт)](https://sql-academy.org/ru/trainer/tasks/31) 
 
 <details>
   <summary>Решение</summary>
@@ -486,7 +482,7 @@ WHERE member_name LIKE '% Quincey';
 
 </details>
 
-32. Вывести средний возраст людей (в годах), хранящихся в базе данных. Результат округлите до целого в меньшую сторону.
+Задание 32. Вывести средний возраст людей (в годах), хранящихся в базе данных. Результат округлите до целого в меньшую сторону.
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/32) 
 
 <details>
@@ -501,7 +497,7 @@ FROM FamilyMembers;
 
 </details>
 
-33. Найдите среднюю стоимость икры. В базе данных хранятся данные о покупках красной (red caviar) и черной икры (black 
+Задание 33. Найдите среднюю стоимость икры. В базе данных хранятся данные о покупках красной (red caviar) и черной икры (black 
 caviar). [(сайт)](https://sql-academy.org/ru/trainer/tasks/33) 
 
 <details>
@@ -517,7 +513,7 @@ WHERE good_name = 'red caviar'
 
 </details>
 
-34. Сколько всего 10-ых классов [(сайт)](https://sql-academy.org/ru/trainer/tasks/34) 
+Задание 34. Сколько всего 10-ых классов [(сайт)](https://sql-academy.org/ru/trainer/tasks/34) 
 
 <details>
   <summary>Решение</summary>
@@ -530,7 +526,7 @@ WHERE name LIKE '10 %';
 
 </details>
 
-35. Сколько различных кабинетов школы использовались 2.09.2019 в образовательных целях ? 
+Задание 35. Сколько различных кабинетов школы использовались 2.09.2019 в образовательных целях ? 
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/35)
 
 <details>
@@ -546,7 +542,7 @@ WHERE DATE_FORMAT(date, '%e.%m.%Y') = '2.09.2019';
 
 </details>
 
-36. Выведите информацию об обучающихся живущих на улице Пушкина (ul. Pushkina)? 
+Задание 36. Выведите информацию об обучающихся живущих на улице Пушкина (ul. Pushkina)? 
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/36)
 
 <details>
@@ -560,7 +556,7 @@ WHERE address RLIKE 'Pushkina';
 
 </details>
 
-37. Сколько лет самому молодому обучающемуся ? [(сайт)](https://sql-academy.org/ru/trainer/tasks/37)
+Задание 37. Сколько лет самому молодому обучающемуся ? [(сайт)](https://sql-academy.org/ru/trainer/tasks/37)
 
 <details>
   <summary>Решение</summary>
@@ -574,7 +570,7 @@ LIMIT 1;
 
 </details>
 
-38. Сколько Анн (Anna) учится в школе ? [(сайт)](https://sql-academy.org/ru/trainer/tasks/38)
+Задание 38. Сколько Анн (Anna) учится в школе ? [(сайт)](https://sql-academy.org/ru/trainer/tasks/38)
 
 <details>
   <summary>Решение</summary>
@@ -587,7 +583,7 @@ WHERE first_name = 'Anna';
 
 </details>
 
-39. Сколько обучающихся в 10 B классе ? [(сайт)](https://sql-academy.org/ru/trainer/tasks/39)
+Задание 39. Сколько обучающихся в 10 B классе ? [(сайт)](https://sql-academy.org/ru/trainer/tasks/39)
 
 <details>
   <summary>Решение</summary>
@@ -601,7 +597,7 @@ WHERE name = '10 B';
 
 </details>
 
-40. Выведите название предметов, которые преподает Ромашкин П.П. (Romashkin P.P.) ? 
+Задание 40. Выведите название предметов, которые преподает Ромашкин П.П. (Romashkin P.P.) ? 
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/40)
 
 <details>
@@ -619,7 +615,7 @@ WHERE last_name = 'Romashkin'
 
 </details>
 
-41. Во сколько начинается 4-ый учебный предмет по расписанию ? [(сайт)](https://sql-academy.org/ru/trainer/tasks/41)
+Задание 41. Во сколько начинается 4-ый учебный предмет по расписанию ? [(сайт)](https://sql-academy.org/ru/trainer/tasks/41)
 
 <details>
   <summary>Решение</summary>
@@ -632,7 +628,7 @@ WHERE id = 4;
 
 </details>
 
-42. Сколько времени обучающийся будет находиться в школе, учась со 2-го по 4-ый уч. предмет?
+Задание 42. Сколько времени обучающийся будет находиться в школе, учась со 2-го по 4-ый уч. предмет?
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/42)
 
 <details>
@@ -646,7 +642,7 @@ WHERE id BETWEEN 2 AND 4;
 
 </details>
 
-43. Выведите фамилии преподавателей, которые ведут физическую культуру (Physical Culture). Отсортируйте преподавателей 
+Задание 43. Выведите фамилии преподавателей, которые ведут физическую культуру (Physical Culture). Отсортируйте преподавателей 
 по фамилии в алфавитном порядке. [(сайт)](https://sql-academy.org/ru/trainer/tasks/43)
 
 <details>
@@ -663,7 +659,7 @@ ORDER BY last_name;
 
 </details>
 
-44. Найдите максимальный возраст (колич. лет) среди обучающихся 10 классов ? 
+Задание 44. Найдите максимальный возраст (колич. лет) среди обучающихся 10 классов ? 
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/44)
 
 <details>
@@ -681,7 +677,7 @@ LIMIT 1;
 
 </details>
 
-45. Какие кабинеты чаще всего использовались для проведения занятий? Выведите те, которые использовались максимальное 
+Задание 45. Какие кабинеты чаще всего использовались для проведения занятий? Выведите те, которые использовались максимальное 
 количество раз. [(сайт)](https://sql-academy.org/ru/trainer/tasks/45)
 
 <details>
@@ -702,7 +698,7 @@ HAVING count(classroom) = (
 
 </details>
 
-46. В каких классах введет занятия преподаватель "Krauze" ? [(сайт)](https://sql-academy.org/ru/trainer/tasks/46)
+Задание 46. В каких классах введет занятия преподаватель "Krauze" ? [(сайт)](https://sql-academy.org/ru/trainer/tasks/46)
 
 <details>
   <summary>Решение</summary>
@@ -718,7 +714,7 @@ GROUP BY name;
 
 </details>
 
-47. Сколько занятий провел Krauze 30 августа 2019 г.? [(сайт)](https://sql-academy.org/ru/trainer/tasks/47)
+Задание 47. Сколько занятий провел Krauze 30 августа 2019 г.? [(сайт)](https://sql-academy.org/ru/trainer/tasks/47)
 
 <details>
   <summary>Решение</summary>
@@ -733,7 +729,7 @@ WHERE DATE_FORMAT(date, '%e %M %Y') = '30 August 2019'
 
 </details>
 
-48. Выведите заполненность классов в порядке убывания [(сайт)](https://sql-academy.org/ru/trainer/tasks/48)
+Задание 48. Выведите заполненность классов в порядке убывания [(сайт)](https://sql-academy.org/ru/trainer/tasks/48)
 
 <details>
   <summary>Решение</summary>
@@ -749,7 +745,7 @@ ORDER BY count DESC;
 
 </details>
 
-49. Какой процент обучающихся учится в "10 A" классе? Выведите ответ в диапазоне от 0 до 100 без округления, например, 
+Задание 49. Какой процент обучающихся учится в "10 A" классе? Выведите ответ в диапазоне от 0 до 100 без округления, например, 
 96.0201. [(сайт)](https://sql-academy.org/ru/trainer/tasks/49)
 
 <details>
@@ -767,7 +763,7 @@ WHERE name = '10 A';
 
 </details>
 
-50. Какой процент обучающихся родился в 2000 году? Результат округлить до целого в меньшую сторону. 
+Задание 50. Какой процент обучающихся родился в 2000 году? Результат округлить до целого в меньшую сторону. 
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/50)
 
 <details>
@@ -787,7 +783,7 @@ WHERE YEAR(birthday) = 2000;
 
 </details>
 
-51. Добавьте товар с именем "Cheese" и типом "food" в список товаров (Goods). 
+Задание 51. Добавьте товар с именем "Cheese" и типом "food" в список товаров (Goods). 
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/51)
 
 <details>
@@ -809,7 +805,7 @@ SET good_id   = (
 
 </details>
 
-52. Добавьте в список типов товаров (GoodTypes) новый тип "auto". [(сайт)](https://sql-academy.org/ru/trainer/tasks/52)
+Задание 52. Добавьте в список типов товаров (GoodTypes) новый тип "auto". [(сайт)](https://sql-academy.org/ru/trainer/tasks/52)
 
 <details>
   <summary>Решение</summary>
@@ -825,7 +821,7 @@ SET good_type_id   = (
 
 </details>
 
-53. Измените имя "Andie Quincey" на новое "Andie Anthony". [(сайт)](https://sql-academy.org/ru/trainer/tasks/53)
+Задание 53. Измените имя "Andie Quincey" на новое "Andie Anthony". [(сайт)](https://sql-academy.org/ru/trainer/tasks/53)
 
 <details>
   <summary>Решение</summary>
@@ -838,7 +834,7 @@ WHERE member_name = 'Andie Quincey';
 
 </details>
 
-54. Удалить всех членов семьи с фамилией "Quincey". [(сайт)](https://sql-academy.org/ru/trainer/tasks/54)
+Задание 54. Удалить всех членов семьи с фамилией "Quincey". [(сайт)](https://sql-academy.org/ru/trainer/tasks/54)
 
 <details>
   <summary>Решение</summary>
@@ -851,7 +847,7 @@ WHERE member_name LIKE '% Quincey';
 
 </details>
 
-55. Удалить компании, совершившие наименьшее количество рейсов. [(сайт)](https://sql-academy.org/ru/trainer/tasks/55)
+Задание 55. Удалить компании, совершившие наименьшее количество рейсов. [(сайт)](https://sql-academy.org/ru/trainer/tasks/55)
 
 <details>
   <summary>Решение</summary>
@@ -875,7 +871,7 @@ WHERE id IN (
 
 </details>
 
-56. Удалить все перелеты, совершенные из Москвы (Moscow). [(сайт)](https://sql-academy.org/ru/trainer/tasks/56)
+Задание 56. Удалить все перелеты, совершенные из Москвы (Moscow). [(сайт)](https://sql-academy.org/ru/trainer/tasks/56)
 
 <details>
   <summary>Решение</summary>
@@ -888,7 +884,7 @@ WHERE town_from = 'Moscow';
 
 </details>
 
-57. Перенести расписание всех занятий на 30 мин. вперед. [(сайт)](https://sql-academy.org/ru/trainer/tasks/57)
+Задание 57. Перенести расписание всех занятий на 30 мин. вперед. [(сайт)](https://sql-academy.org/ru/trainer/tasks/57)
 
 <details>
   <summary>Решение</summary>
@@ -901,7 +897,7 @@ SET start_pair = ADDTIME(start_pair, '00:30:00'),
 
 </details>
 
-58. Добавить отзыв с рейтингом 5 на жилье, находящиеся по адресу "11218, Friel Place, New York", от имени "George 
+Задание 58. Добавить отзыв с рейтингом 5 на жилье, находящиеся по адресу "11218, Friel Place, New York", от имени "George 
 Clooney" [(сайт)](https://sql-academy.org/ru/trainer/tasks/58)
 
 <details>
@@ -926,7 +922,7 @@ SET id             = (
 
 </details>
 
-59. Вывести пользователей,указавших Белорусский номер телефона ? Телефонный код Белоруссии +375. 
+Задание 59. Вывести пользователей,указавших Белорусский номер телефона ? Телефонный код Белоруссии +375. 
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/59)
 
 <details>
@@ -940,7 +936,7 @@ WHERE phone_number LIKE '+375 %';
 
 </details>
 
-60. Выведите идентификаторы преподавателей, которые хотя бы один раз за всё время преподавали в каждом из одиннадцатых 
+Задание 60. Выведите идентификаторы преподавателей, которые хотя бы один раз за всё время преподавали в каждом из одиннадцатых 
 классов. [(сайт)](https://sql-academy.org/ru/trainer/tasks/60)
 
 <details>
@@ -957,7 +953,7 @@ HAVING COUNT(DISTINCT name) = 2;
 
 </details>
 
-61. Выведите список комнат, которые были зарезервированы хотя бы на одни сутки в 12-ую неделю 2020 года. В данной задаче
+Задание 61. Выведите список комнат, которые были зарезервированы хотя бы на одни сутки в 12-ую неделю 2020 года. В данной задаче
 в качестве одной недели примите период из семи дней, первый из которых начинается 1 января 2020 года. Например, первая 
 неделя года — 1–7 января, а третья — 15–21 января. [(сайт)](https://sql-academy.org/ru/trainer/tasks/61)
 
@@ -974,7 +970,7 @@ WHERE WEEK(start_date, 1) = 12
 
 </details>
 
-62. Вывести в порядке убывания популярности доменные имена 2-го уровня, используемые пользователями для электронной 
+Задание 62. Вывести в порядке убывания популярности доменные имена 2-го уровня, используемые пользователями для электронной 
 почты. Полученный результат необходимо дополнительно отсортировать по возрастанию названий доменных имён. 
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/62)
 
@@ -992,7 +988,7 @@ ORDER BY count DESC,
 
 </details>
 
-63. Выведите отсортированный список (по возрастанию) фамилий и имен студентов в виде Фамилия.И. 
+Задание 63. Выведите отсортированный список (по возрастанию) фамилий и имен студентов в виде Фамилия.И. 
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/63)
 
 <details>
@@ -1006,7 +1002,7 @@ ORDER BY name;
 
 </details>
 
-64. Вывести количество бронирований по каждому месяцу каждого года, в которых было хотя бы 1 бронирование. Результат 
+Задание 64. Вывести количество бронирований по каждому месяцу каждого года, в которых было хотя бы 1 бронирование. Результат 
 отсортируйте в порядке возрастания даты бронирования. [(сайт)](https://sql-academy.org/ru/trainer/tasks/64)
 
 <details>
@@ -1025,7 +1021,7 @@ ORDER BY year,
 
 </details>
 
-65. Необходимо вывести рейтинг для комнат, которые хоть раз арендовали, как среднее значение рейтинга отзывов 
+Задание 65. Необходимо вывести рейтинг для комнат, которые хоть раз арендовали, как среднее значение рейтинга отзывов 
 округленное до целого вниз. [(сайт)](https://sql-academy.org/ru/trainer/tasks/65)
 
 <details>
@@ -1041,7 +1037,7 @@ GROUP BY room_id;
 
 </details>
 
-66. Вывести список комнат со всеми удобствами (наличие ТВ, интернета, кухни и кондиционера), а также общее количество 
+Задание 66. Вывести список комнат со всеми удобствами (наличие ТВ, интернета, кухни и кондиционера), а также общее количество 
 дней и сумму за все дни аренды каждой из таких комнат. [(сайт)](https://sql-academy.org/ru/trainer/tasks/66)
 
 <details>
@@ -1064,7 +1060,7 @@ GROUP BY home_type,
 
 </details>
 
-67. Вывести время отлета и время прилета для каждого перелета в формате "ЧЧ:ММ, ДД.ММ - ЧЧ:ММ, ДД.ММ", где часы и минуты
+Задание 67. Вывести время отлета и время прилета для каждого перелета в формате "ЧЧ:ММ, ДД.ММ - ЧЧ:ММ, ДД.ММ", где часы и минуты
 с ведущим нулем, а день и месяц без. [(сайт)](https://sql-academy.org/ru/trainer/tasks/67)
 
 <details>
@@ -1081,7 +1077,7 @@ FROM Trip;
 
 </details>
 
-68. Для каждой комнаты, которую снимали как минимум 1 раз, найдите имя человека, снимавшего ее последний раз, и дату, 
+Задание 68. Для каждой комнаты, которую снимали как минимум 1 раз, найдите имя человека, снимавшего ее последний раз, и дату, 
 когда он выехал [(сайт)](https://sql-academy.org/ru/trainer/tasks/68)
 
 <details>
@@ -1104,7 +1100,7 @@ FROM (
 
 </details>
 
-69. Вывести идентификаторы всех владельцев комнат, что размещены на сервисе бронирования жилья и сумму, которую они 
+Задание 69. Вывести идентификаторы всех владельцев комнат, что размещены на сервисе бронирования жилья и сумму, которую они 
 заработали [(сайт)](https://sql-academy.org/ru/trainer/tasks/69)
 
 <details>
@@ -1120,7 +1116,7 @@ GROUP BY owner_id;
 
 </details>
 
-70. Необходимо категоризовать жилье на economy, comfort, premium по цене соответственно <= 100,
+Задание 70. Необходимо категоризовать жилье на economy, comfort, premium по цене соответственно <= 100,
 100 < цена < 200, >= 200. В качестве результата вывести таблицу с названием категории и количеством жилья, попадающего в
 данную категорию [(сайт)](https://sql-academy.org/ru/trainer/tasks/70)
 
@@ -1141,7 +1137,7 @@ GROUP BY category;
 
 </details>
 
-71. Найдите какой процент пользователей, зарегистрированных на сервисе бронирования, хоть раз арендовали или сдавали в 
+Задание 71. Найдите какой процент пользователей, зарегистрированных на сервисе бронирования, хоть раз арендовали или сдавали в 
 аренду жилье. Результат округлите до сотых. [(сайт)](https://sql-academy.org/ru/trainer/tasks/71)
 
 <details>
@@ -1169,7 +1165,7 @@ SELECT ROUND(
 
 </details>
 
-72. Выведите среднюю стоимость бронирования для комнат, которых бронировали хотя бы один раз. Среднюю стоимость 
+Задание 72. Выведите среднюю стоимость бронирования для комнат, которых бронировали хотя бы один раз. Среднюю стоимость 
 необходимо округлить до целого значения вверх. [(сайт)](https://sql-academy.org/ru/trainer/tasks/72)
 
 <details>
@@ -1184,7 +1180,7 @@ GROUP BY room_id;
 
 </details>
 
-73. Выведите id тех комнат, которые арендовали нечетное количество раз 
+Задание 73. Выведите id тех комнат, которые арендовали нечетное количество раз 
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/73)
 
 <details>
@@ -1200,7 +1196,7 @@ HAVING count % 2 != 0;
 
 </details>
 
-74. Выведите идентификатор и признак наличия интернета в помещении. Если интернет в сдаваемом жилье присутствует, то 
+Задание 74. Выведите идентификатор и признак наличия интернета в помещении. Если интернет в сдаваемом жилье присутствует, то 
 выведите «YES», иначе «NO». [(сайт)](https://sql-academy.org/ru/trainer/tasks/74)
 
 <details>
@@ -1214,7 +1210,7 @@ FROM Rooms;
 
 </details>
 
-75. Выведите фамилию, имя и дату рождения студентов, кто был рожден в мае. 
+Задание 75. Выведите фамилию, имя и дату рождения студентов, кто был рожден в мае. 
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/75)
 
 <details>
@@ -1225,12 +1221,12 @@ SELECT last_name,
        first_name,
        birthday
 FROM Student
-WHERE MONTHNAME(birthday) = 'May';
+WHERE MONTHNAME(birthday) = 'May'
 ```
 
 </details>
 
-76. Вывести имена всех пользователей сервиса бронирования жилья, а также два признака: является ли пользователь 
+Задание 76. Вывести имена всех пользователей сервиса бронирования жилья, а также два признака: является ли пользователь 
 собственником какого-либо жилья (is_owner) и является ли пользователь арендатором (is_tenant). В случае наличия у 
 пользователя признака необходимо вывести в соответствующее поле 1, иначе 0. 
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/76)
@@ -1256,12 +1252,12 @@ SELECT name,
                    1,
                    0
            ) AS is_tenant
-FROM Users;
+FROM Users
 ```
 
 </details>
 
-77. Создайте представление с именем "People", которое будет содержать список имен (first_name) и фамилий (last_name) 
+Задание 77. Создайте представление с именем "People", которое будет содержать список имен (first_name) и фамилий (last_name) 
 всех студентов (Student) и преподавателей(Teacher) [(сайт)](https://sql-academy.org/ru/trainer/tasks/77)
 
 <details>
@@ -1275,12 +1271,12 @@ FROM Student
 UNION
 SELECT first_name,
        last_name
-FROM Teacher;
+FROM Teacher
 ```
 
 </details>
 
-78. Выведите всех пользователей с электронной почтой в «hotmail.com» 
+Задание 78. Выведите всех пользователей с электронной почтой в «hotmail.com» 
 [(сайт)](https://sql-academy.org/ru/trainer/tasks/78)
 
 <details>
@@ -1289,7 +1285,7 @@ FROM Teacher;
 ```mysql
 SELECT *
 FROM Users
-WHERE email RLIKE '@hotmail.com';
+WHERE email RLIKE '@hotmail.com'
 ```
 
 </details>
@@ -1305,12 +1301,12 @@ WHERE email RLIKE '@hotmail.com';
 SELECT id,
        home_type,
        IF(has_tv AND has_internet, price * 0.9, price) AS price
-FROM Rooms;
+FROM Rooms
 ```
 
 </details>
 
-80. Создайте представление «Verified_Users» с полями id, name и email, которое будет показывает только тех 
+Задание 80. Создайте представление «Verified_Users» с полями id, name и email, которое будет показывает только тех 
 пользователей, у которых подтвержден адрес электронной почты. [(сайт)](https://sql-academy.org/ru/trainer/tasks/80)
 
 <details>
@@ -1320,7 +1316,55 @@ FROM Rooms;
 CREATE VIEW Verified_Users AS
 SELECT id, name, email
 FROM Users
-WHERE email_verified_at IS NOT NULL;
+WHERE email_verified_at IS NOT NULL
+```
+
+</details>
+
+Задание 97. Посчитать количество работающих складов на текущую дату по каждому городу. Вывести только те города, у которых количество складов более 80.
+Данные на выходе - город, количество складов. [(сайт)](https://sql-academy.org/ru/trainer/tasks/97)
+
+<details>
+  <summary>Решение</summary>
+
+```mysql
+SELECT city,
+	COUNT(warehouse_id) as warehouse_count
+FROM Warehouses
+where date_close is null
+group by city
+HAVING warehouse_count > 80
+```
+
+</details>
+
+Задание 99. Посчитай доход с женской аудитории (доход = сумма(price * items)). Обратите внимание, что в таблице женская аудитория имеет поле user_gender «female» или «f». [(сайт)](https://sql-academy.org/ru/trainer/tasks/99)
+
+<details>
+  <summary>Решение</summary>
+
+```mysql
+SELECT SUM(items * price) as income_from_female
+FROM Purchases
+WHERE user_gender in ('female', 'f')
+```
+
+</details>
+
+Задание 101. Выведи для каждого пользователя первое наименование, которое он заказал (первое по времени транзакции). [(сайт)](https://sql-academy.org/ru/trainer/tasks/101)
+
+<details>
+  <summary>Решение</summary>
+
+```mysql
+SELECT user_id,
+	    item
+from Transactions
+where transaction_ts in (
+		SELECT MIN(transaction_ts)
+		FROM Transactions
+		GROUP BY user_id
+	)
 ```
 
 </details>
