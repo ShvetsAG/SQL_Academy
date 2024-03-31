@@ -1346,6 +1346,37 @@ WHERE c.customer_key IN (SELECT DISTINCT p.customer_key
 ```
 </details>
 
+Задание 94. Вывести имена покупателей, каждый из которых приобрёл Laptop и Monitor (использовать наименование товара product.name) в марте 2024 года?
+[(сайт)](https://sql-academy.org/ru/trainer/tasks/94)
+
+<details>
+  <summary>Решение</summary>
+
+```mysql
+SELECT name
+FROM Customer c
+WHERE c.customer_key in (
+                SELECT *
+                FROM    (SELECT DISTINCT p.customer_key
+                	FROM Product b
+                		JOIN Purchase p on b.product_key = p.product_key
+                	WHERE b.name = 'Laptop' 
+                		AND YEAR(date) = 2024
+                		AND MONTH(date) = 3
+                	UNION ALL
+                    SELECT DISTINCT p.customer_key
+                	FROM Product b
+                		JOIN Purchase p on b.product_key = p.product_key
+                	WHERE b.name = 'Monitor' 
+                		AND YEAR(date) = 2024
+                		AND MONTH(date) = 3
+                	order by 1) t
+                GROUP BY customer_key	
+                HAVING COUNT(customer_key) = 2)
+```
+
+</details>
+
 Задание 97. Посчитать количество работающих складов на текущую дату по каждому городу. Вывести только те города, у которых количество складов более 80.
 Данные на выходе - город, количество складов. [(сайт)](https://sql-academy.org/ru/trainer/tasks/97)
 
