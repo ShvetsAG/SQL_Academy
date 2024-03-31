@@ -8,7 +8,7 @@
 
 ```mysql
 SELECT name
-FROM passenger;
+FROM passenger
 ```
 
 </details>
@@ -20,7 +20,7 @@ FROM passenger;
 
 ```mysql
 SELECT name
-FROM Company;
+FROM Company
 ```
 
 </details>
@@ -33,7 +33,7 @@ FROM Company;
 ```mysql
 SELECT *
 FROM trip
-WHERE town_from = 'Moscow';
+WHERE town_from = 'Moscow'
 ```
 
 </details>
@@ -46,7 +46,7 @@ WHERE town_from = 'Moscow';
 ```mysql
 SELECT name
 FROM passenger
-WHERE name LIKE '%man';
+WHERE name LIKE '%man'
 ```
 
 </details>
@@ -150,7 +150,12 @@ WHERE LENGTH(name) = (
     SELECT MAX(LENGTH(name))
     FROM passenger);
 ```
-
+```mysql
+select name
+from passenger
+ORDER by LENGTH(name) desc
+LIMIT 2
+```
 </details>
 
 Задание 12. Вывести id и количество пассажиров для всех прошедших полётов [(сайт)](https://sql-academy.org/ru/trainer/tasks/12)
