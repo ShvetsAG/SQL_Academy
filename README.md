@@ -1440,3 +1440,22 @@ where transaction_ts in (
 ```
 
 </details>
+
+Задание 111. Посчитайте население каждого региона. В качестве результата выведите название региона и его численность населения. [(сайт)](https://sql-academy.org/ru/trainer/tasks/111)
+
+<details>
+  <summary>Решение</summary>
+
+```mysql
+SELECT 
+    r.name region_name,
+    SUM(c.population) total_population
+FROM 
+    Cities c 
+JOIN 
+    Regions r ON r.id = c.regionid
+GROUP BY 
+    region_name
+```
+
+</details>
